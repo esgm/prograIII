@@ -11,10 +11,12 @@ public class TreeDepthServiceTest {
     @Test
     public void testProfundidades() {
         TreeNode root = new TreeNode(1);
-        root.izquierda = new TreeNode(2);
-        root.derecha = new TreeNode(3);
-        root.izquierda.izquierda = new TreeNode(4);
-        root.izquierda.derecha = new TreeNode(5);
+        TreeNode leftChild = new TreeNode(2);
+        TreeNode rightChild = new TreeNode(3);
+        root.setIzquierda(leftChild);
+        root.setDerecha(rightChild);
+        leftChild.setIzquierda(new TreeNode(4));
+        leftChild.setDerecha(new TreeNode(5));
 
         int min = service.calcularProfundidadMinima(root);  // 2 (1 -> 3)
         int max = service.calcularProfundidadMaxima(root);  // 3 (1 -> 2 -> 4 o 5)
