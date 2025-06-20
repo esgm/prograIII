@@ -17,10 +17,10 @@ public class PalabraValidatorServiceTest {
                 {'#','#','P','Y','T','H','O','N','#','#'},
                 {'#','#','#','#','#','#','#','#','#','#'},
                 {'#','#','#','#','#','#','#','#','#','#'},
-                {'#','#','#','#','#','#','#','#','#','#'}
+                {'#','#','#','#','#','#','E','B','E','R'}
         };
 
-        String[] diccionario = {"HELLO", "WORLD", "JAVA", "CODE", "CAT", "PYTHON"};
+        String[] diccionario = {"HELLO", "WORD", "JAVA", "CODE", "CAT", "PYTHON","EBER"};
 
         PalabraValidatorService service = new PalabraValidatorService();
         assertTrue(service.validar(board, diccionario));
