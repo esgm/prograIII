@@ -3,7 +3,7 @@ Progra III
 Serie I: los 3 ejercicios tienen pruebas unitarias y tambien se puede comprobar con los paths correspondientes 
 ejecutar con **mvn compile quarkus:dev**
   **Palabras Cruzadas**
-    Test: 1 pass 1 error
+    Test: passed 2
 
     Postman post
     [localhost](http://localhost:8080/validar)
